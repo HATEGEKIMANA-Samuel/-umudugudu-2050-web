@@ -1,0 +1,148 @@
+.error {
+  color: maroon;
+}
+.hide-all {
+  display: none !important;
+}
+.head {
+  background: linear-gradient(85deg, #392c70, #6a005b) !important;
+}
+.location {
+  font-size: 11px !important;
+}
+#modalMovement .modal-dialog {
+  /* Width */
+  max-width: 100%;
+  width: auto !important;
+  display: inline-block;
+}
+.modal-open #modalMovement {
+  z-index: 1050;
+}
+#modalMovement {
+  z-index: -1;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.show-all {
+  display: block !important;
+}
+select option,
+.form-control {
+  font-size: 14px;
+}
+label {
+  font-size: 13px !important;
+}
+
+.tab-container {
+  background: #fff;
+  transition: 0.3s;
+  padding-bottom: 20px;
+}
+.tab-container nav {
+  background: transparent;
+  border: none;
+}
+.tab-content {
+  padding: 0px 40px;
+}
+.tab-content legend {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  text-align: center;
+  color: #272c33;
+}
+.tab-content-body {
+  margin: 0 auto;
+  width: 95%;
+  padding: 20px;
+  margin-bottom: 20px;
+  /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+  transition: 0.3s;
+}
+.btn,
+.btn-primary {
+  background: #272c33;
+  color: #fff;
+}
+#nav-tab {
+  width: 80%;
+  margin: 0 auto;
+}
+#nav-tab ul {
+  margin: 0;
+  background: #000;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#nav-tab ul li {
+  display: inline;
+  float: left;
+  padding: 15px 18%;
+  background: #272c33;
+  border-right: 1px solid grey;
+}
+#nav-tab ul li a {
+  color: #fff;
+}
+#nav-tab ul li#active {
+  background: #e74c3c !important;
+}
+
+.fiedset-type {
+  border: 1px solid #eceff0;
+  margin-bottom: 10px;
+  background-color: #dbecfd57 !important;
+}
+.fiedset-type .fieldset-legend {
+  width: inherit;
+  padding: 0 10px;
+  border-bottom: none;
+  text-align: left;
+  margin-left: 10px;
+  font-weight: 500;
+}
+.fiedset-type .form-group {
+  width: 98%;
+  margin-left: 5px;
+}
+
+.data-search-container {
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  left: 0;
+  z-index: 9999 !important;
+  display: block !important;
+}
+
+.the-wraper {
+  z-index: -1;
+  display: none;
+}
+
+.data-search-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  margin: 20px;
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container-data {
+  width: 60%;
+  margin: 50px auto;
+}

@@ -1,0 +1,25 @@
+/* this is a custom css file */
+.required-mark {
+  color: red;
+}
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+body #result-stats {
+  line-height: 43px;
+}
+#result-stats {
+  /* position: absolute;
+  top: 0; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 220ms ease-in-out;
+  color: #70757a;
+  line-height: 33px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 8px;
+}

@@ -1,0 +1,22 @@
+-- -- this file contain queries need to be runned without importing whole db
+--   --add column on members table
+--    ALTER TABLE `members` ADD `what_relationship` VARCHAR(100) NULL DEFAULT NULL AFTER `relationship`;
+--    -- add columns to diplomat tb
+--    ALTER TABLE `diplomats` ADD `isibo` VARCHAR(100) NULL DEFAULT NULL AFTER `village`, ADD `occupation` VARCHAR(100) NULL DEFAULT NULL AFTER `isibo`, ADD `level_education` VARCHAR(50) NULL DEFAULT NULL AFTER `occupation`, ADD `rent_house` ENUM('yego','hoya') NULL DEFAULT NULL AFTER `level_education`, ADD `number_house` INT(4) NULL DEFAULT NULL AFTER `rent_house`, ADD `house_info` VARCHAR(50) NULL DEFAULT NULL AFTER `number_house`;
+--    -- add colummn on member table
+--    ALTER TABLE `members` CHANGE `id` `id` BIGINT NOT NULL AUTO_INCREMENT;
+--       ALTER TABLE `members` ADD `occupation` VARCHAR(60) NOT NULL AFTER `status`, ADD `level_education` VARCHAR(60) NOT NULL AFTER `occupation`, ADD `visitor_info` VARCHAR(100) NOT NULL COMMENT 'arrival-from-departure date' AFTER `level_education`;
+--    -- create table
+--    CREATE TABLE `family_visitors` ( `id` BIGINT NOT NULL ,  `names` VARCHAR(60) NOT NULL ,  `arrival;_date` DATE NOT NULL DEFAULT CURRENT_TIMESTAMP ,  `departure_date` DATE NOT NULL DEFAULT CURRENT_TIMESTAMP ,  `place_name` VARCHAR(70) NULL DEFAULT NULL ,  `head_id` BIGINT NOT NULL ,  `user_id` INT(6) NOT NULL ,  `comment` VARCHAR(100) NULL DEFAULT NULL ,  `action_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ,    PRIMARY KEY  (`id`)) ENGINE = InnoDB;
+--    -- foreign key
+--    ALTER TABLE `family_visitors` ADD FOREIGN KEY (`head_id`) REFERENCES `members`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+--    ALTER TABLE `help` ADD `count_help` VARCHAR(50) NULL DEFAULT NULL AFTER `user`, ADD `comment` VARCHAR(100) NULL DEFAULT NULL AFTER `count_help`;
+--    ALTER TABLE `help` ADD `other_giver` VARCHAR(50) NULL DEFAULT NULL AFTER `giver`;
+--    ALTER TABLE `diplomats` ADD INDEX(`dob`);
+--     ALTER TABLE `members` ADD INDEX(`dob`);
+--     ALTER TABLE `track_movement` ADD INDEX(`document_id`);
+--     ALTER TABLE `track_movement` ADD INDEX(`user_id`);
+-- 08/05/2020
+--ALTER TABLE `help` ADD FOREIGN KEY (`family`) REFERENCES `diplomats`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+--010/05/2020
+TRUNCATE TABLE `comments`

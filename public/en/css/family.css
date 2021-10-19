@@ -1,0 +1,173 @@
+#modalMovement .modal-dialog {
+  /* Width */
+  max-width: 100%;
+  width: auto !important;
+  display: inline-block;
+}
+.modal-open #modalMovement {
+  z-index: 1050;
+}
+#modalMovement {
+  z-index: -1;
+  display: grid !important;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  max-width: 90%;
+}
+
+.mt-1 {
+  margin-top: 1rem !important;
+}
+.head {
+  background: linear-gradient(85deg, #392c70, #6a005b) !important;
+}
+#nav-tab {
+  border-bottom: 1px solid green;
+}
+
+.nav-item.nav-link.active {
+  border-color: green;
+  color: green;
+  border-bottom: none;
+}
+
+.info-list {
+  border-left: none;
+  border-right: none;
+  width: 95%;
+  margin-left: 2%;
+  font-size: 10pt;
+  padding: 5px;
+}
+
+.first-child {
+  border-top: none;
+}
+
+.last-child {
+  border-bottom: none;
+}
+
+.labels {
+  display: inline-block;
+  width: 25%;
+  font-family: inherit;
+  color: #848482;
+}
+
+.datas {
+  display: inline-block;
+  width: 75%;
+  font-family: inherit;
+  color: black;
+  font-weight: 400;
+}
+
+.edit-link {
+  margin-bottom: 30px;
+}
+
+.edit_btn {
+  font-size: 12px;
+  font-weight: bold;
+  background: #435d7d;
+  border: none;
+  margin-top: 10px;
+  margin-left: 2%;
+  min-width: 50px;
+}
+
+.edit_btn:hover,
+.edit_btn:focus {
+  background: #41cba9;
+  outline: none !important;
+}
+
+#comment_button {
+  /*max-width: 50px;*/
+  max-height: 38px;
+  margin-top: 20px;
+  padding-top: 2px;
+  margin-left: 30px;
+}
+
+#comments {
+  margin-left: 2%;
+}
+
+#comment_field {
+  resize: none;
+  min-width: 300px;
+}
+
+#submit_comment {
+  display: block;
+  font-size: 12px;
+}
+
+.comment {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.comment .comment_data {
+  font-size: 11pt;
+  font-family: inherit;
+}
+
+.comment .comment_u_t {
+  color: #848482;
+  font-size: 9pt;
+  /*margin-left: 20px;*/
+}
+
+#file-upload[type="file"] {
+  display: none;
+}
+
+#attach_upload[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.custom-attach-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.attachments_lists a {
+  color: #6f86a9;
+  font-size: 14px;
+}
+
+.attachments_lists {
+  background-color: #c2dbff;
+  padding: 10px;
+  width: 97%;
+}
